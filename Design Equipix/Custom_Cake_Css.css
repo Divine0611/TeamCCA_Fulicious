@@ -1,0 +1,82 @@
+.d1{
+	background-color: black;
+	color: white;
+	font-size: 40px;
+	text-align: center;
+}
+.d2{
+	font-size: 30px;
+	font-family: cursive;
+	color: black;
+}
+.d3{
+	text-align: center;
+	color: black;
+}
+.sp1{
+	font-size: 30px;
+	margin-left: 5px;
+}
+.sp2{
+	font-size: 30px;
+	margin-left: 20px;
+}
+.sp3{
+	font-size: 30px;
+	margin-left: 50px;
+}
+.sp4{
+	font-size: 30px;
+	margin-left: 100px;
+}
+.sp5{
+	font-size: 30px;
+	margin-left: 40px;
+}
+#f1{
+	margin-left: 240px;
+	font-size: 20px;
+}
+#f2{
+	font-size: 20px;
+}
+#f3{
+	font-size: 20px;
+}
+#f4{
+	font-size: 20px;
+	margin-left: 20px;
+}
+#f5{
+	font-size: 20px;
+	margin-left: 70px;
+}
+.d5{
+	text-align: center;
+	color: black;
+}
+.p1{
+	font-size: 30px;
+}
+.btn1{
+	background-color: black;
+	color: white; 
+	font-size:30px;
+	cursor: pointer;
+}
+.btn1:hover{
+	background-color: white;
+	color: black; 
+}
+.inp{
+	font-size: 20px;
+}
+.alert{
+	background-color: black;
+	color: white;
+}
+body{
+	background: -webkit-linear-gradient(white,white,white,#BF883B);
+	background-size: 1350px 650px;
+	background-repeat: no-repeat;
+}

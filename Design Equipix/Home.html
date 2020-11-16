@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FuLicious</title>
+	<link rel="stylesheet" type="text/css" href="HomeCss.css">
+	<meta name="viewport" content="width=device-width, initial-scal=1.0">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Modak&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Xanh+Mono:ital@1&display=swap" rel="stylesheet">
+	<script src="Cart.js">	
+	</script>
+</head>
+<body>
+    <div class="popup" id="popup-1">
+  <div class="overlay"></div>
+  <div class="content">
+    <div class="close-btn" onclick="togglePopup1()">&times;</div>
+    <h1>Cart</h1>
+    <div id="d0"></div>
+    <div id="hr0"></div>
+    <div id="p0"></div>
+    <div><p id="dd0">Total = ₹0</p></div>
+    <div><p id="ddd0">BUY NOW</p></div>
+  </div>
+</div>
+<div id="slider">
+     	   <figure>
+     	   	<div class="blend1">
+     	   	<img src="black.jpg" id="i100">
+     		<img src="slider1.jpg" id="i100">
+     	</div>
+     	    <div class="blend1">
+     	   	<img src="black.jpg" id="i100">
+     		<img src="slider2.jpg" id="i100">
+     	</div>
+     	    <div class="blend1">
+     	   	<img src="black.jpg" id="i100">
+     		<img src="slider3.jpg" id="i100">
+     	</div>
+     	    <div class="blend1">
+     	   	<img src="black.jpg" id="i100">
+     		<img src="slider4.jpg" id="i100">
+     	</div>
+     	    <div class="blend1">
+     	   	<img src="black.jpg" id="i100">
+     		<img src="slider5.jpg" id="i100">
+     	</div>
+     	</figure>
+     </div>
+     <div class="p1">
+     	 <p>FuLicious</p>
+     </div>
+     <div class="p2">
+     	 <p>We are just one cake away...</p>
+     </div>
+<button onclick="togglePopup1()" id="btn1">Cart <img src="cart_img.png" class="i200"></button>
+<div class="d10000">
+     <p><img src="logo.png" class="i500"><a href="Contact_Us.html" class="a1000"> CONTACT US | </a><span><a href="About_Us.html" class="a1001"> ABOUT US</a></p>
+</div>
+<div class="d6">
+    <div class="d7">
+    	<p class="p9">The Diwali Delight Sale</p>
+    	<img src="sale_cake.jpg" class="i3">
+    	<p class="p10">Get upto 60% off<br> on our cakes.</p>
+    </div>
+    <hr class="hr1">
+    <div class="d8">
+    	<p class="p11">TRENDING</p>
+    	<img src="choco_pineapple_cake.jpg" class="i4">
+    	<p class="p12">Choco Pineapple Cake</p>
+    	<p class="p13">This Choco Pineapple cake recipe contains white chocolate with a beautiful light texture, and loaded with the aroma of pineapple in every bite. Moreover, this white chocolate cake recipe is perfect for any<br><span class="sp2"> occasion from birthdays to aniversaries.</span><br><span class="sp3">Get 70% off on our Diwali special 'Choco Pineapple Cake'.</span></p>
+    </div>
+</div>
+<hr>
+<div class="d5">
+	<p class="p8">Cakes & Pastries</p>
+</div>
+<table>
+	<tr>
+		<td>
+			<div class="container100">
+    	<div class="card100">
+    		<div class="imgbox100">
+    			<img src="Custom_cake_image.jpg" alt="cake1" class="i1000">
+    		</div>
+    		<div class="content100">
+    			<h2 class="h2100">Custom Cake</h2>
+    		  <p class="p100">Can't find your taste, create your own fusion cakes<br><button class="btn9"><a href="Custom_Cake.html" class="a20">Order</a></button></p>
+    		</div>
+    	</div>
+    </div>
+		</td>
+		<td>
+			<div class="container100">
+    	<div class="card100">
+    		<div class="imgbox100">
+    			<img src="choco_pineapple_cake.jpg" alt="cake1" class="i1000">
+    		</div>
+    		<div class="content100">
+    			<h2 class="h2100">Choco Pineapple Cake</h2>
+    			<p class="p100">Earliest delivery: <span class="sp4">Today</span><br>  Price: ₹ 299 <br>₹<del> 999</del> 70% off<br><br><br><button class="btn10" onclick="cake0()" value="299">Add to Cart</button></p>
+    		</div>
+    	</div>
+    </div>
+		</td>
+		<td>
+			<div class="container100">
+    	<div class="card100">
+    		<div class="imgbox100">
+    			<img src="cake1.jpg" alt="cake" class="i1000">
+    		</div>
+    		<div class="content100">
+    			<h2 class="h2100">Thandai Mousse Cake</h2>
+    			<p class="p100">Earliest delivery: <span class="sp4">Today</span><br>  Price: ₹ 399 <br>₹<del> 799</del> 50% off<br><br><br><button class="btn10" onclick="cake1()" value="299">Add to Cart</button></p>
+    		</div>
+    	</div>
+    </div>
+		</td>
+		<td>
+			<div class="container100">
+    	<div class="card100">
+    		<div class="imgbox100">
+    			<img src="cake3.jpg" alt="cake" class="i1000">
+    		</div>
+    		<div class="content100">
+    			<h2 class="h2100">Gulab Jamun Cake</h2>
+    			<p class="p100">Earliest delivery: <span class="sp4">Tomorrow</span><br>  Price: ₹ 399 <br>₹<del> 799</del> 50% off<br><br><br><button class="btn10" onclick="cake2()" value="299">Add to Cart</button></p>
+    		</div>
+    	</div>
+    </div>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<div class="container100">
+    	<div class="card100">
+    		<div class="imgbox100">
+    			<img src="cake4.jpg" alt="cake1" class="i1000">
+    		</div>
+    		<div class="content100">
+    			<h2 class="h2100">Masala Chai Semifreddo</h2>
+    			<p class="p100">Earliest delivery: <span class="sp4">Today</span><br>  Price: ₹ 319 <br>₹<del> 799</del> 60% off<br><br><br><button class="btn10" onclick="cake3()" value="299">Add to Cart</button></p>
+    		</div>
+    	</div>
+    </div>
+		</td>
+		<td>
+			<div class="container100">
+    	<div class="card100">
+    		<div class="imgbox100">
+    			<img src="cake5.jpg" alt="cake1" class="i1000">
+    		</div>
+    		<div class="content100">
+    			<h2 class="h2100">Rasgulla Cake</h2>
+    			<p class="p100">Earliest delivery: <span class="sp4">Today</span><br>  Price: ₹ 299 <br>₹<del> 599</del> 50% off<br><br><br><button class="btn10" onclick="cake4()" value="299">Add to Cart</button></p>
+    		</div>
+    	</div>
+    </div>
+		</td>
+		<td>
+			<div class="container100">
+    	<div class="card100">
+    		<div class="imgbox100">
+    			<img src="cake6.jpg" alt="cake1" class="i1000">
+    		</div>
+    		<div class="content100">
+    			<h2 class="h2100">Rasmalai Cake</h2>
+    			<p class="p100">Earliest delivery: <span class="sp4">Tomorrow</span><br>  Price: ₹ 399 <br>₹<del> 799</del> 50% off<br><br><br><button class="btn10" onclick="cake5()" value="299">Add to Cart</button></p>
+    		</div>
+    	</div>
+    </div>
+		</td>
+		<td>
+			<div class="container100">
+    	<div class="card100">
+    		<div class="imgbox100">
+    			<img src="cake7.png" alt="cake1" class="i1000">
+    		</div>
+    		<div class="content100">
+    			<h2 class="h2100">Lemon Vanila Cake</h2>
+    			<p class="p100">Earliest delivery: <span class="sp4">Tomorrow</span><br>  Price: ₹ 249 <br>₹<del> 499</del> 50% off<br><br><br><button class="btn10" onclick="cake6()" value="299">Add to Cart</button></p>
+    		</div>
+    	</div>
+    </div>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<div class="container100">
+    	<div class="card100">
+    		<div class="imgbox100">
+    			<img src="Pastry1.jpg" alt="cake1" class="i1000">
+    		</div>
+    		<div class="content100">
+    			<h2 class="h2100">Apple Pastry</h2>
+    			<p class="p100">Earliest delivery: <span class="sp4">Today</span><br>  Price: ₹ 349 <br>₹<del> 699</del> 50% off<br><br><br><button class="btn10" onclick="cake7()" value="299">Add to Cart</button></p>
+    		</div>
+    	</div>
+    </div>
+		</td>
+		<td>
+			<div class="container100">
+    	<div class="card100">
+    		<div class="imgbox100">
+    			<img src="Pastry2.jpg" alt="cake1" class="i1000">
+    		</div>
+    		<div class="content100">
+    			<h2 class="h2100">Mango Pastry</h2>
+    			<p class="p100">Earliest delivery: <span class="sp4">Today</span><br>  Price: ₹ 299 <br>₹<del> 499</del> 40% off<br><br><br><button class="btn10" onclick="cake8()" value="299">Add to Cart</button></p>
+    		</div>
+    	</div>
+    </div>
+		</td>
+	</tr>
+</table>
+<div class="d5">
+	<p class="p8">Donuts</p>
+</div>
+<table>
+	<tr>
+		<td>
+			<div class="container100">
+    	<div class="card100">
+    		<div class="imgbox100">
+    			<img src="donut1.png" alt="cake1" class="i1000">
+    		</div>
+    		<div class="content100">
+    			<h2 class="h2100">Glazed Pumpkin Donut</h2>
+    			<p class="p100">Earliest delivery: <span class="sp4">Today</span><br>  Price: ₹ 99 <br>₹<del> 199</del> 50% off<br><br><br><button class="btn10" onclick="donut1()" value="299">Add to Cart</button></p>
+    		</div>
+    	</div>
+    </div>
+		</td>
+		<td>
+			<div class="container100">
+    	<div class="card100">
+    		<div class="imgbox100">
+    			<img src="donut2.png" alt="cake1" class="i1000">
+    		</div>
+    		<div class="content100">
+    			<h2 class="h2100">Glazed Yeast Donut</h2>
+    			<p class="p100">Earliest delivery: <span class="sp4">Today</span><br>  Price: ₹ 79 <br>₹<del> 199</del> 60% off<br><br><br><button class="btn10" onclick="donut2()" value="299">Add to Cart</button></p>
+    		</div>
+    	</div>
+    </div>
+		</td>
+		<td>
+			<div class="container100">
+    	<div class="card100">
+    		<div class="imgbox100">
+    			<img src="donut3.png" alt="cake1" class="i1000">
+    		</div>
+    		<div class="content100">
+    			<h2 class="h2100">Jelly Donut</h2>
+    			<p class="p100">Earliest delivery: <span class="sp4">Today</span><br>  Price: ₹ 99 <br>₹<del> 199</del> 50% off<br><br><br><button class="btn10" onclick="donut3()" value="299">Add to Cart</button></p>
+    		</div>
+    	</div>
+    </div>
+		</td>
+		<td>
+			<div class="container100">
+    	<div class="card100">
+    		<div class="imgbox100">
+    			<img src="donut4.jpg" alt="cake1" class="i1000">
+    		</div>
+    		<div class="content100">
+    			<h2 class="h2100">Cake Donut</h2>
+    			<p class="p100">Earliest delivery: <span class="sp4">Today</span><br>  Price: ₹ 99 <br>₹<del> 199</del> 50% off<br><br><br><button class="btn10" onclick="donut4()" value="299">Add to Cart</button></p>
+    		</div>
+    	</div>
+    </div>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<div class="container100">
+    	<div class="card100">
+    		<div class="imgbox100">
+    			<img src="donut5.jpg" alt="cake1" class="i1000">
+    		</div>
+    		<div class="content100">
+    			<h2 class="h2100">Boston Cream Donut</h2>
+    			<p class="p100">Earliest delivery: <span class="sp4">Today</span><br>  Price: ₹ 119 <br>₹<del> 199</del> 40% off<br><br><br><button class="btn10" onclick="donut5()" value="299">Add to Cart</button></p>
+    		</div>
+    	</div>
+    </div>
+		</td>
+		<td>
+			<div class="container100">
+    	<div class="card100">
+    		<div class="imgbox100">
+    			<img src="donut6.jpg" alt="cake1" class="i1000">
+    		</div>
+    		<div class="content100">
+    			<h2 class="h2100">Cider Donut</h2>
+    			<p class="p100">Earliest delivery: <span class="sp4">Today</span><br>  Price: ₹ 99 <br>₹<del> 199</del> 50% off<br><br><br><button class="btn10" onclick="donut6()" value="299">Add to Cart</button></p>
+    		</div>
+    	</div>
+    </div>
+		</td>
+		<td>
+			<div class="container100">
+    	<div class="card100">
+    		<div class="imgbox100">
+    			<img src="donut7.png" alt="cake1" class="i1000">
+    		</div>
+    		<div class="content100">
+    			<h2 class="h2100">Blueberry Donut</h2>
+    			<p class="p100">Earliest delivery: <span class="sp4">Today</span><br>  Price: ₹ 159 <br>₹<del> 399</del> 60% off<br><br><br><button class="btn10" onclick="donut7()" value="299">Add to Cart</button></p>
+    		</div>
+    	</div>
+    </div>
+		</td>
+	</tr>
+</table>
+<div class="d5">
+	<p class="p8">Shakes</p>
+</div>
+<table>
+	<tr>
+		<td>
+			<div class="container100">
+    	<div class="card100">
+    		<div class="imgbox100">
+    			<img src="shakes1.jpg" alt="cake1" class="i1000">
+    		</div>
+    		<div class="content100">
+    			<h2 class="h2100">Chocolate Shake</h2>
+    			<p class="p100">Earliest delivery: <span class="sp4">Today</span><br>  Price: ₹ 49 <br>₹<del> 99</del> 50% off<br><br><br><button class="btn10" onclick="shake1()" value="299">Add to Cart</button></p>
+    		</div>
+    	</div>
+    </div>
+		</td>
+		<td>
+			<div class="container100">
+    	<div class="card100">
+    		<div class="imgbox100">
+    			<img src="shakes2.png" alt="cake1" class="i1000">
+    		</div>
+    		<div class="content100">
+    			<h2 class="h2100">Marshmellow Shake</h2>
+    			<p class="p100">Earliest delivery: <span class="sp4">Today</span><br>  Price: ₹ 49 <br>₹<del> 99</del> 50% off<br><br><br><button class="btn10" onclick="shake2()" value="299">Add to Cart</button></p>
+    		</div>
+    	</div>
+    </div>
+		</td>
+		<td>
+			<div class="container100">
+    	<div class="card100">
+    		<div class="imgbox100">
+    			<img src="shakes3.jpg" alt="cake1" class="i1000">
+    		</div>
+    		<div class="content100">
+    			<h2 class="h2100">Mango Shake</h2>
+    			<p class="p100">Earliest delivery: <span class="sp4">Today</span><br>  Price: ₹ 49 <br>₹<del> 99</del> 50% off<br><br><br><button class="btn10" onclick="shake3()" value="299">Add to Cart</button></p>
+    		</div>
+    	</div>
+    </div>
+		</td>
+		<td>
+			<div class="container100">
+    	<div class="card100">
+    		<div class="imgbox100">
+    			<img src="shakes4.jpg" alt="cake1" class="i1000">
+    		</div>
+    		<div class="content100">
+    			<h2 class="h2100">Cold Mocha</h2>
+    			<p class="p100">Earliest delivery: <span class="sp4">Today</span><br>  Price: ₹ 49 <br>₹<del> 99</del> 50% off<br><br><br><button class="btn10" onclick="shake4()" value="299">Add to Cart</button></p>
+    		</div>
+    	</div>
+    </div>
+		</td>
+	</tr>
+	</table>
+<div class="d5">
+	<p class="p8">On-the-go Food</p>
+</div>
+<table>
+	<tr>
+		<td>
+			<div class="container100">
+    	<div class="card100">
+    		<div class="imgbox100">
+    			<img src="muffin2.jpg" alt="cake1" class="i1000">
+    		</div>
+    		<div class="content100">
+    			<h2 class="h2100">Chocolate Muffin</h2>
+    			<p class="p100">Earliest delivery: <span class="sp4">Today</span><br>  Price: ₹ 19<br><br><br><button class="btn10" onclick="otg1()" value="299">Add to Cart</button></p>
+    		</div>
+    	</div>
+    </div>
+		</td>
+		<td>
+			<div class="container100">
+    	<div class="card100">
+    		<div class="imgbox100">
+    			<img src="muffin1.jpg" alt="cake1" class="i1000">
+    		</div>
+    		<div class="content100">
+    			<h2 class="h2100">Vanilla Muffin</h2>
+    			<p class="p100">Earliest delivery: <span class="sp4">Today</span><br>  Price: ₹ 29<br><br><br><button class="btn10" onclick="otg2()" value="299">Add to Cart</button></p>
+    		</div>
+    	</div>
+    </div>
+		</td>
+		<td>
+			<div class="container100">
+    	<div class="card100">
+    		<div class="imgbox100">
+    			<img src="Bread_Butter.jpg" alt="cake1" class="i1000">
+    		</div>
+    		<div class="content100">
+    			<h2 class="h2100">Bread Butter</h2>
+    			<p class="p100">Earliest delivery: <span class="sp4">Today</span><br>  Price: ₹ 19 <br><br><br><button class="btn10" onclick="otg3()" value="299">Add to Cart</button></p>
+    		</div>
+    	</div>
+    </div>
+		</td>
+		<td>
+			<div class="container100">
+    	<div class="card100">
+    		<div class="imgbox100">
+    			<img src="Bread_Jam.jpg" alt="cake1" class="i1000">
+    		</div>
+    		<div class="content100">
+    			<h2 class="h2100">Bread Jam</h2>
+    			<p class="p100">Earliest delivery: <span class="sp4">Today</span><br>  Price: ₹ 19 <br><br><br><button class="btn10" onclick="otg4()" value="299">Add to Cart</button></p>
+    		</div>
+    	</div>
+    </div>
+		</td>
+	</tr>
+	</table>
+	<hr>
+    <table>
+        <tr>
+            <td>
+                <img src="Card1.png" class="i300">
+            </td>
+            <td>
+                <img src="Card2.png" class="i400">
+            </td>
+            <td>
+                <img src="Card4.png" class="i400">
+            </td>
+        </tr>
+    </table>
+    <footer class="ftr">
+        <p class="p400">We are just one cake away... Order now</p>
+    </footer>
+</body>
+</html>
